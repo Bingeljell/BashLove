@@ -1,0 +1,62 @@
+<html>
+<head>
+<script language="Javascript">
+
+function random_quote(){
+	var ranNum = Math.floor(Math.random() * 5);
+	return ranNum;
+}
+
+function getQuote(){
+	var whichQuote = random_quote();
+	
+	var quote = new Array (5)
+	quote[0]="&lt;erno&gt; hm. I've lost a machine.. literally _lost_. it responds to ping, it works completely, I just can't figure out where in my apartment it is.";
+	quote[1]="&lt;Guo_Si&gt; Hey, you know what sucks? <br />&lt;TheXPhial&gt; vaccuums <br />&lt;Guo_Si&gt; Hey, you know what sucks in a metaphorical sense? <br />&lt;TheXPhial&gt; black holes <br />&lt;Guo_Si&gt; Hey, you know what just isn't cool?<br /> &lt;TheXPhial&gt; lava?";
+	quote[2]="* ab is away - gone, if anyone talks in the next 25 minutes as me it's bm being an asshole -<br /> &lt;ab&gt; HAHAHA DISREGARD THAT, I SUCK COCKS";
+	quote[3]="&lt;xterm&gt; The problem with America is stupidity. I'm not saying there should be a capital punishment for stupidity, but why don't we just take the safety labels off of everything and let the problem solve itself?";
+	quote[4]="&lt;mage&gt; what should I give sister for unzipping?<br /> &lt;Kevyn&gt; Um. Ten bucks?<br /> &lt;mage&gt; no I mean like, WinZip?";
+
+
+document.getElementById("mydiv").innerHTML = quote[whichQuote];
+
+}
+
+</script>
+<style>
+#container {
+width: 800px;
+margin-left: auto;
+margin-right: auto;
+margin-top:200px;
+background-color: #ffe;
+border: 1px solid #fcc;
+}
+button {
+margin-left: 360px;
+margin-bottom: 20px;
+color: #900;
+background: #CCC;
+font-weight: bold;
+border: 3px double #900;
+}
+
+button:hover {
+color: #FFF;
+background: #900;
+cursor: pointer;
+}
+
+</style>
+</head>
+<body>
+<div id="container">
+<button type="Submit" value="Get a quote" onClick="getQuote();">Get a Quote!</button>
+<!--<form name="bash">
+<input type="button" name="mayur" value="Get a quote" onClick="getQuote();">
+</form> -->
+<div id="mydiv"></div>
+</div>
+</body>
+
+</html>
